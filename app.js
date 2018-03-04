@@ -1,13 +1,13 @@
 // 引入系统资源
-const fs = require("fs");
-const express = require("express");
-const art = require("art-template");
+var fs = require("fs");
+var express = require("express");
+var art = require("art-template");
 
 // 引入个人资源
-const md = require("./md");
+var md = require("./md");
 
 // 模块初始化
-const app = express();
+var app = express();
 
 // 开放资源
 app.use("/", express.static("./"));
@@ -23,7 +23,7 @@ app.get("/", (req, res) => {
             throw err;
         }        
         data = data.toString();
-        let mainHtml = art.render(data, {
+        var mainHtml = art.render(data, {
             centent: md.mains,
             list: md.lists
         });
