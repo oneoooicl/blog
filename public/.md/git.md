@@ -1,3 +1,4 @@
+![image](/img/git.jpg)
 ## 1:开始使用
 - 1.1 安装GIT
 - 1.2 初始化GIT

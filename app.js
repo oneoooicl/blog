@@ -15,6 +15,7 @@ app.use("/node_modules", express.static("./node_modules/"));
 app.use("/css", express.static("./public/css/"));
 app.use("/js", express.static("./public/js/"));
 app.use("/fonticon", express.static("./public/fonticon/"));
+app.use("/img", express.static("./public/img/"));
 
 // 请求处理
 app.get("/", (req, res) => {

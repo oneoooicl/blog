@@ -4,6 +4,9 @@
   padding: 30px 50px;
   color: #34495e;
 }
+.md img {
+  margin: 50px auto;
+}
 .md * {
   font-family: "'Source Sans Pro', 'Helvetica Neue', Arial, sans-serif";
 }
