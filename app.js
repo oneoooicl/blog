@@ -33,6 +33,6 @@ app.get("/", (req, res) => {
 });
 
 // 启动服务
-app.listen(3300, () => {
+app.listen(3000, () => {
     console.log('Server...'); 
 });
