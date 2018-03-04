@@ -1,0 +1,77 @@
+.md {
+  box-sizing: border-box;
+  width: 100%;
+  padding: 30px 50px;
+  color: #34495e;
+}
+.md * {
+  font-family: "'Source Sans Pro', 'Helvetica Neue', Arial, sans-serif";
+}
+.md h1 {
+  font-weight: 600;
+  font-size: 28px;
+  line-height: 58px;
+}
+.md h2 {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 50px;
+  border-bottom: 1px solid #eee;
+  padding-bottom: 10px;
+  margin-bottom: 10px;
+}
+.md h3 {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 42px;
+}
+.md h4 {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 34px;
+}
+.md h5 {
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 26px;
+}
+.md ul {
+  padding-left: 20px;
+  margin-left: 10px;
+  border-left: 3px solid #fff;
+  pointer-events: auto;
+}
+.md ul:hover {
+  border-left: 3px solid #eee;
+}
+.md li {
+  font-size: 14px;
+  line-height: 26px;
+  list-style-type: disc;
+}
+.md li li {
+  list-style-type: circle;
+}
+.md li li li {
+  list-style-type: square;
+}
+.md code {
+  display: inline-block;
+  padding: 0px 6px;
+  background: #f8f8f8;
+  border: 1px solid #ddd;
+  border-radius: 3px;
+  line-height: 20px;
+  font-size: 13px;
+}
+.md pre {
+  display: block;
+  min-width: 300px;
+  background: #f8f8f8;
+  border-radius: 3px;
+  border: 1px solid #ddd;
+}
+.md pre code {
+  border: none;
+  background: transparent;
+}

@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+    <meta charset='UTF-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <meta http-equiv='X-UA-Compatible' content='ie=edge'>
+    <meta http-equiv='renderer' content='wibkit'>
+    <title>L-blog</title>
+    <link rel="icon" href="/favicon.ico">
+    <!-- 引入样式 -->
+    <link rel="stylesheet" href="/node_modules/element-ui/lib/theme-chalk/index.css">
+    <link rel="stylesheet" href="/css/base.css">
+    <link rel="stylesheet" href="/fonticon/iconfont.css">
+    <link rel="stylesheet" href="/css/index.css">
+    <link rel="stylesheet" href="/css/md.css">
+</head>
+<body>
+    <!-- 头部模块 -->
+    <div class = 'header' id="header">
+        <el-menu :default-active="activeIndex" class="el-menu-demo" mode="horizontal" @select="handleSelect">
+            <el-menu-item index="9" disabled>AngularJs</el-menu-item>
+            <el-menu-item index="8" disabled>ReactJs</el-menu-item>
+            <el-menu-item index="7">VueJs</el-menu-item>
+            <el-menu-item index="6">Webpack</el-menu-item>
+            <el-menu-item index="5">NodeJs</el-menu-item>
+            <el-menu-item index="4">ZeptoJs</el-menu-item>
+            <el-menu-item index="3">JavaScript</el-menu-item>
+            <el-menu-item index="2">HTML5/CSS3</el-menu-item>
+            <el-menu-item index="1">Git</el-menu-item>
+            <el-menu-item index="0">开始</el-menu-item>
+        </el-menu>
+    </div>
+    <!-- 正文模块 -->
+    <div class = 'centent' id="centent">
+        <div class='centent_left'>
+            <div class='centent_left_top'>
+                <i class="iconfont icon-github"></i>
+                <i class="iconfont icon-icon-email"></i>
+                <i class="iconfont icon-shouqicaidan"></i>
+            </div>
+            <el-row class="tac">
+                <el-col :span="24">
+                    <el-menu default-active="2" class="el-menu-vertical-demo lists" @open="handleOpen" @close="handleClose">
+                        <!-- <el-submenu index="1">
+                                    <template slot="title">
+                                        <span>开始</span>
+                                    </template>
+                                    <el-menu-item index="1-1">选项1</el-menu-item>
+                                    <el-menu-item index="1-2">选项2</el-menu-item>
+                                    <el-menu-item index="1-2">选项2</el-menu-item>
+                                    <el-menu-item index="1-2">选项2</el-menu-item>
+                                    <el-menu-item index="1-2">选项2</el-menu-item>
+                                    <el-menu-item index="1-2">选项2</el-menu-item>
+                                    <el-menu-item index="1-2">选项2</el-menu-item>
+                                    <el-menu-item index="1-2">选项2</el-menu-item>
+                                    <el-menu-item index="1-2">选项2</el-menu-item>
+                                    <el-menu-item index="1-2">选项2</el-menu-item>
+                                    <el-menu-item index="1-2">选项2</el-menu-item>
+                                    <el-menu-item index="1-2">选项2</el-menu-item>
+                                    <el-menu-item index="1-2">选项2</el-menu-item>
+                                    <el-menu-item index="1-2">选项2</el-menu-item>
+                                    <el-menu-item index="1-2">选项2</el-menu-item>
+                                    <el-menu-item index="1-2">选项2</el-menu-item>
+                                    <el-menu-item index="1-2">选项2</el-menu-item>
+                                    <el-menu-item index="1-2">选项2</el-menu-item>
+                                    <el-menu-item index="1-2">选项2</el-menu-item>
+                                    <el-menu-item index="1-2">选项2</el-menu-item>
+                                    <el-menu-item index="1-2">选项2</el-menu-item>
+                                    <el-menu-item index="1-2">选项2</el-menu-item>
+                                    <el-menu-item index="1-2">选项2</el-menu-item>
+                                    <el-menu-item index="1-2">选项2</el-menu-item>
+                                    <el-menu-item index="1-2">选项2</el-menu-item>
+                                    <el-menu-item index="1-2">选项2</el-menu-item>
+                                    <el-menu-item index="1-2">选项2</el-menu-item>
+                                    <el-menu-item index="1-2">选项2</el-menu-item>
+                                    <el-menu-item index="1-2">选项2</el-menu-item>
+                                </el-submenu>
+                                <el-menu-item index="2">
+                                    <span slot="title">入门</span>
+                                </el-menu-item> -->
+                        <%=#list %>
+                    </el-menu>
+                </el-col>
+            </el-row>
+        </div>
+        <div class='centent_right'>
+            <div id='md' class='md'>
+                <%=#centent %>
+            </div>
+        </div>
+    </div>
+    <!-- 引入组件库 -->
+    <!-- 先引入 Vue -->
+    <script src="/node_modules/vue/dist/vue.js"></script>
+    <!-- 引入组件库 -->
+    <script src="/node_modules/element-ui/lib/index.js"></script>
+    <script>
+        window.onload = function () {
+            var app1 = new Vue({
+                el: '#header',
+                data: function () {
+                    
+                }
+            })
+            var app2 = new Vue({
+                el: '#centent',
+                data: function () {
+
+                }
+            })
+        }
+    </script>
+    
+</body>
+</html>

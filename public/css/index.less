@@ -1,0 +1,107 @@
+@Color: red;
+
+body{
+    padding-top: 39px;
+}
+.header{
+    width: 100%;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    text-align: center;
+    background: #fff;
+    z-index: 99;
+}
+.centent{
+    position: relative;
+}
+.centent_left{
+    display: none;
+    width: 200px;
+    height: 100%;;
+}
+// .centent_right{
+    
+// }
+@media (min-width:768px){
+    .centent_left{
+        display: inline-block;
+        width: 250px;
+        border-right: 1px solid #e6e6e6;
+        position: fixed;
+        top: 39px;
+        left: 0px;
+        bottom: 0px;
+        overflow-y: hidden;
+    }
+    .centent_left:hover{
+        overflow-y: auto;
+    }
+    .centent_right{
+        padding-left: 250px;
+        width: 100%;
+        box-sizing: border-box;
+    }
+}
+
+
+.centent_left_top{
+    height: 50px;
+    padding-left: 20px;
+    border-bottom: 1px solid #eee;
+}
+
+.iconfont{
+    font-size: 22px;
+    margin-left:35px;
+    line-height: 50px;
+    cursor: pointer;
+    color: #ccc;
+}
+.iconfont:nth-child(2):hover{
+    color: #409EFF;
+}
+.iconfont:nth-child(1):hover{
+    color: #222;
+}
+.iconfont:nth-child(3):hover{
+    color: #67c23a;
+}
+
+
+/* 框架清理 */
+.el-menu{
+    padding: 0px 20px;
+}
+.el-menu--horizontal>.el-menu-item{
+    float: right;
+}
+
+.el-menu{
+    font-size: 13px;
+}
+.el-menu--horizontal>.el-menu-item{
+    height:38px;
+    line-height: 38px;
+}
+.centent{
+    .el-menu{
+        padding: 0px;
+        border-right: none;
+    }
+}
+.el-menu-item{
+    font-size: 13px;
+}
+.el-submenu__title *{
+    font-size: 16px;
+    font-family: "微软雅黑 light";
+}
+.el-menu-item *{
+    font-size: 16px;
+    font-family: "微软雅黑 light";
+}
+.el-submenu__title{
+    height: 39px;
+    line-height: 39px;
+}

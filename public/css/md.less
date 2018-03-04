@@ -1,0 +1,97 @@
+// 标题样式
+@h_weight:600;  
+@h1size:28px;   @h1height:58px;
+@h2size:24px;   @h2height:50px;
+@h3size:20px;   @h3height:42px;
+@h4size:16px;   @h4height:34px;
+@h5size:12px;   @h5height:26px;
+
+// 列表样式
+@liheight:26px;     @lisize:14px;
+
+// 代码
+@border:#ddd;    @back:#f8f8f8;
+@line:20px;         @size:13px;
+
+.md{
+    box-sizing: border-box;
+    width: 100%;
+    padding: 30px 50px;
+    color: #34495e;
+
+    *{
+        font-family: "'Source Sans Pro', 'Helvetica Neue', Arial, sans-serif";
+    }
+
+    h1{
+        font-weight: @h_weight;
+        font-size: @h1size;
+        line-height: @h1height;
+    }
+    h2{
+        font-weight: @h_weight;
+        font-size: @h2size;
+        line-height: @h2height;
+        border-bottom:1px solid #eee;
+        padding-bottom: 10px;
+        margin-bottom: 10px;
+    }
+    h3{
+        font-weight: @h_weight;
+        font-size: @h3size;
+        line-height: @h3height;
+    }
+    h4{
+        font-weight: @h_weight;
+        font-size: @h4size;
+        line-height: @h4height;
+    }
+    h5{
+        font-weight: @h_weight;
+        font-size: @h5size;
+        line-height: @h5height;
+    }
+
+    ul{
+        padding-left: 20px;
+        margin-left: 10px;
+        border-left: 3px solid #fff;
+        pointer-events: auto;  
+    }
+    ul:hover{
+        border-left: 3px solid #eee;
+    }
+    li{
+        font-size: @lisize;
+        line-height: @liheight;
+        list-style-type: disc;
+        li{
+            list-style-type: circle;
+            li{
+                list-style-type: square;
+            }
+        }
+    }   
+
+    code{
+        display: inline-block;
+        padding: 0px 6px;
+        background: @back;
+        border:1px solid @border;
+        border-radius: 3px;
+        line-height: 20px;
+        font-size: 13px;
+    }
+    pre{
+        display: block;
+        min-width: 300px;
+        background: @back;
+        border-radius: 3px;
+        border:1px solid @border;
+
+        code{
+            border:none;
+            background:transparent;
+        }
+    }
+}
